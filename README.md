@@ -1,59 +1,54 @@
 # Stelle
-現在もポートフォリオとして制作中の画像共有SNSです。
-日本の名所から隠れた絶景までみんなで共有しようというコンセプトで、Stelle(シュテーレ）とはドイツ語で「場所」、「スポット」を意味します。
 
-<img width="1252" alt="スクリーンショット 2020-07-16 21 38 17" src="https://user-images.githubusercontent.com/61341108/87671825-fa8bf500-c7ac-11ea-9360-12c29c468979.png">
+The first my web application.
+Inspired by the local revitalization activities of university, that app was created with the concept of sharing with everyone everything from famous places in Japan to hidden, spectacular views.
 
+<img width="800px" alt="スクリーンショット 2020-07-16 21 38 17" src="https://user-images.githubusercontent.com/61341108/87671825-fa8bf500-c7ac-11ea-9360-12c29c468979.png">
 
-# 制作背景
-学生時代に漁村の地域活性化活動を行った際に、「この村や地域の良さををもっと他の人に知ってほしい」と思ったことがきっかけでした。丁度その頃にプログラミングと出会い何か一つWebアプリを作ろうと考えていたところだったので、これを機に「観光所紹介」をコンセプトとして制作することにしました。
-
-## AWS構成図
+## System Flow
 <img width="1080" alt="スクリーンショット 2020-08-30 17 01 11" src="https://user-images.githubusercontent.com/61341108/91654292-7b474c00-eae2-11ea-84f2-492c3212c54f.png">
 
+## Getting Started
 
-## フロントエンド
-- 柔軟なグリッドシステム
-- jQueryを用いたちょっとしたアニメーション
+It is no longer in good hands and will probably not work properly. Therefore, deprecated.
 
-## バックエンド
-- 認証周り、投稿機能周り
-  - 簡単ログイン機能によるゲストユーザーでのログイン
-  - RememberMe機能
-  - 名前やメールアドレス、プロフィール画像の編集
-  - carrierwave + minimagick + S3を用いた画像の投稿、リサイズ
-  - Ajaxを用いた投稿のいいね / いいねの取り消し
-  - いいねした人一覧 / いいねした投稿一覧
-  - フォロー・フォロワー機能 / フォロー・フォロワー一覧
-- テスト
-  - RSpecを用いた単体テスト
-  - RuboCopを用いた静的コードの解析
-- その他
-  - 都道府県での検索機能
-  
-## インフラ
-- 開発環境にDocker-composeの導入
-- Capistranoを用いたEC2へのコマンド一つでの自動デプロイ
+#### key points are...
 
-ホーム画面では投稿画像の比率に合わせて柔軟にグリッドを組み、Ajaxを用いて投稿一覧画面から簡単にいいねが押せるようにしました。
+- Authentication and posting functions
+  - Guest user login with easy login function
+  - RememberMe function
+  - Edit name, email address and profile image
+  - Post and resize images using carrierwave + minimagick + S3
+  - Liking / Unliking posts using Ajax
+  - List of people who have liked / List of posts you have liked
+  - Followers and followers function / List of followers and followers
+- Testing
+  - Unit testing using RSpec
+  - Static code analysis using RuboCop
+- Deployment of Docker-compose in the development environment
+- Automatic deployment to EC2 with a single command using Capistrano
 
-git管理としてはmaster, topicの２つのブランチで運用をする方法をとり、GitHubではプルリクエストやレビューを用いて疑似チーム開発についても学びました。
+The home page has a flexible grid that matches the ratio of posted images, and Ajax is used to allow users to easily click "Like" from the post list screen.
 
-# URL
-https://stelle-app.com
+We also learned about pseudo-team development using pull requests and reviews on GitHub.
 
-# 使用技術
-- Ruby 2.6.5
+- Other
+  - Search function by prefecture
+
+# Built With
+
+- Ruby 2.7.0
 - Rails 6.0.3.2
 - RSpec
 - MySQL 8.0.19
 - Capistrano
 - Nginx / Unicorn
 - AWS (VPC, EC2, RDS, S3, ALB, ACM, Route53)
-- Docker
+- Docker, Docker-compose
 - jQuery / Sass / Bootstrap
 
-# 今後の課題
-- 機能数の増加(コメント機能、マップ表示etc)
-- テストを充実させる（不具合をなくす）
-- コードの整理
+# Next Action
+
+- Increase number of functions (comment function, map display, etc.)
+- Enhance testing (eliminate defects)
+- Reorganize code
