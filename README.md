@@ -1,9 +1,9 @@
 # Stelle
+はじめて制作したWebアプリケーションです。
+大学の地域活性化活動からヒントを得て、日本の名所から隠れた絶景までみんなで共有しようというコンセプトで作りました。
 
-The first my web application.
-Inspired by the local revitalization activities of university, that app was created with the concept of sharing with everyone everything from famous places in Japan to hidden, spectacular views.
+<img width="1080" alt="スクリーンショット 2020-07-16 21 38 17" src="https://user-images.githubusercontent.com/61341108/87671825-fa8bf500-c7ac-11ea-9360-12c29c468979.png">
 
-<img width="800px" alt="スクリーンショット 2020-07-16 21 38 17" src="https://user-images.githubusercontent.com/61341108/87671825-fa8bf500-c7ac-11ea-9360-12c29c468979.png">
 
 ## System Flow
 <img width="1080" alt="スクリーンショット 2020-08-30 17 01 11" src="https://user-images.githubusercontent.com/61341108/91654292-7b474c00-eae2-11ea-84f2-492c3212c54f.png">
